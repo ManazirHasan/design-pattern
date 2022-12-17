@@ -1,0 +1,54 @@
+40 topics to know for System Design interviews at Google and Amazon.
+
+10 Distributed Systems Concepts
+- Gossip Protocol
+- Leader Election
+- Consistent Hashing
+- Data Sharding
+- Data Replication
+- Transactions
+- Consistency Models
+- Atomic commitment protocol
+- CAP Theorem
+- PACELC Theorem
+
+10 Advanced Algorithms
+- Bloom Filter
+- QuadTree
+- Leaky Bucket
+- Token Bucket
+- Trie
+- Merkle Tree
+- HyperLogLog
+- Rsync
+- GeoHash
+- Raft/Paxos
+
+10 Popular SD Interview Questions
+- Design TinyUrl
+- Design Youtube
+- Design Ticketmaster
+- Design Dropbox
+- Design Messenger
+- Design Newsfeed
+- Design Instagram
+- Design Twitter
+- Design Uber
+- Design Google Maps
+
+10 Off-The-Shelf Systems
+- Kafka
+- Redis
+- Cassandra
+- InfluxDB
+- Zookeeper
+- Envoy
+- Temporal
+- S3
+- MongoDB
+- Neo4j
+
+I'm building a live, two-week cohort-based course on "System Design for Engineers and Managers".
+It will be offered in November and will have live sessions.
+Fill out the form in the first comment to get on the waitlist &
+be the first to hear when enrollments open!

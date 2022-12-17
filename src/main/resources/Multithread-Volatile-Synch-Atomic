@@ -1,0 +1,8 @@
+Volatile -    Gives visibility but not atomicity
+
+Synchronized -
+
+So,Use of volatile and sychorization givens atomicity
+
+Atomic - the smallest operation tha can be done , e.g i=1, or
+    i=i+1;(retrieve i, increment i , and update i )
