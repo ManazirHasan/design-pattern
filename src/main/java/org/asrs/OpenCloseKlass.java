@@ -9,6 +9,7 @@ public class OpenCloseKlass {
         Calculator.calculate(addition);
     }
 
+
 }
 
 
