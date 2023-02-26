@@ -1,5 +1,7 @@
 package org.asrs;
 
+import org.asrs.builder.Employee;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -13,23 +15,23 @@ public class Lambdaexpression {
     }
 
     private static void lambdaOnEmployeeList() {
-        List<EmployeeObjectOnBuilderPattern> employeeObjectOnBuilderPatternList = new ArrayList<>();
-        buildEmployeeList(employeeObjectOnBuilderPatternList);
+        List<Employee> EmployeeList = new ArrayList<>();
+        buildEmployeeList(EmployeeList);
         //Collections.sort(employeeList);
         //employeeList.sort(Comparator.naturalOrder());
         Comparator comparatorForEmployeeAddress = new ComparatorForEmployeeAddress();
-        employeeObjectOnBuilderPatternList.sort(comparatorForEmployeeAddress);
-        employeeObjectOnBuilderPatternList.forEach(System.out::println);
+        EmployeeList.sort(comparatorForEmployeeAddress);
+        EmployeeList.forEach(System.out::println);
         System.out.println("\n");
         Comparator comparatorForEmployeeAge = new ComparatorForEmployeeAge();
-        employeeObjectOnBuilderPatternList.sort(comparatorForEmployeeAge);
-        employeeObjectOnBuilderPatternList.forEach(System.out::println);
+        EmployeeList.sort(comparatorForEmployeeAge);
+        EmployeeList.forEach(System.out::println);
         System.out.println("\n");
 
-        EmployeeObjectOnBuilderPattern.EmployeeBuilder ex = EmployeeObjectOnBuilderPattern.builder(1, "MAna", "Bang", 234, 35)
+     /*   Employee.EmployeeBuilder ex = Employee.builder(1, "MAna", "Bang", 234, 35)
                 .sex("M");
-        EmployeeObjectOnBuilderPattern employeeObjectOnBuilderPattern = ex.build();
-        System.out.println(employeeObjectOnBuilderPattern);
+        Employee Employee = ex.build();
+        System.out.println(Employee);*/
 
         //Comparator<Employee> CompByName= Comparator.comparing(Employee::getName);
         //Comparator<Employee> CompByAge= Comparator.comparing(Employee::getAge);
@@ -39,7 +41,7 @@ public class Lambdaexpression {
         //employeeList.sort(CompByName);
         //employeeList.sort(CompByAge);
 
-        employeeObjectOnBuilderPatternList.forEach(System.out::println);
+        EmployeeList.forEach(System.out::println);
 
     }
 
@@ -71,11 +73,11 @@ public class Lambdaexpression {
         listStr.add("Bhoot,");
     }
 
-    private static void buildEmployeeList(List<EmployeeObjectOnBuilderPattern> employeeObjectOnBuilderPatternList) {
+    private static void buildEmployeeList(List<Employee> EmployeeList) {
 
-        employeeObjectOnBuilderPatternList.add(new EmployeeObjectOnBuilderPattern(1, "MAnazir", "Banglore", 917899, 39));
-        employeeObjectOnBuilderPatternList.add(new EmployeeObjectOnBuilderPattern(3, "Raf", "US", 17199, 33));
-        employeeObjectOnBuilderPatternList.add(new EmployeeObjectOnBuilderPattern(4, "Shifa", "Canada", 337899, 7));
-        employeeObjectOnBuilderPatternList.add(new EmployeeObjectOnBuilderPattern(5, "Rida", "Austr", 437899, 5));
+        EmployeeList.add(new Employee(1, "MAnazir", "Banglore", 917899, 39));
+        EmployeeList.add(new Employee(3, "Raf", "US", 17199, 33));
+        EmployeeList.add(new Employee(4, "Shifa", "Canada", 337899, 7));
+        EmployeeList.add(new Employee(5, "Rida", "Austr", 437899, 5));
     }
 }
